@@ -88,7 +88,7 @@
       (ok (map-set trial-data-points
         { trial-id: trial-id, data-point-id: data-point-id }
         { 
-          timestamp: block-height,
+          timestamp: stacks-block-height,
           data-hash: data-hash,
           metadata: metadata,
           submitter: tx-sender
@@ -107,7 +107,7 @@
         { trial-id: trial-id, researcher: researcher }
         { 
           access-level: access-level,
-          granted-at: block-height,
+          granted-at: stacks-block-height,
           granted-by: tx-sender
         })))))
 
